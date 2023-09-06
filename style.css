@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Montserrat:wght@700&family=Philosopher:ital@1&family=Poppins:wght@400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Montserrat:wght@700&family=Philosopher:ital@1&family=Poppins:wght@400;500&family=Source+Code+Pro:wght@500&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Code Pro', monospace;
+}
+body{
+    overflow: hidden;
+
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    width: 100%;
+    background: #0e0e0e;
+}
+.container{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+}
+h2{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    color:#222;
+    font-size: 5em;
+    line-height: 0.9em;
+    letter-spacing: 4px;
+}
+h2 span:not(.word){
+    position: relative;
+    z-index: 1;
+    animation: animate 5s linear infinite;
+    
+}
+.text2{
+    animation-delay: -.5s;
+    filter: hue-rotate(225deg);
+}
+.text3{
+    animation-delay: -1s;
+    filter: hue-rotate(165deg);
+}
+.text4{
+    animation-delay: -.25s;
+    filter: hue-rotate(25deg);
+}
+.love{
+
+   color: #fff;
+    text-shadow: 0 0 10px #d532ec, 0 0 20px #d532ec, 0 0 40px #d532ec, 0 0 80px #d532ec, 0 0 100px #d532ec;
+}
+i{
+    text-decoration: none;
+}
+.word:first-child{
+    color: #fff;
+    text-shadow: 0 0 10px #e50b97, 0 0 20px #e50b97, 0 0 40px #e50b97, 0 0 80px #e50b97, 0 0 100px #e50b97;
+}
+.word:nth-child(2){
+    color: #fff;
+    text-shadow: 0 0 10px #0be5d3, 0 0 20px #0be5d3, 0 0 40px #0be5d3, 0 0 80px #0be5d3, 0 0 100px #0be5d3;
+}
+.word:nth-child(3){
+    color: #fff;
+    text-shadow: 0 0 10px #e57f0b, 0 0 20px #e57f0b, 0 0 40px #e57f0b, 0 0 80px #e57f0b, 0 0 100px #e57f0b;
+}
+.word:last-child{
+    color: #fff;
+    text-shadow: 0 0 10px #e50b97, 0 0 20px #d532ec, 0 0 40px #d532ec, 0 0 80px #d532ec, 0 0 100px #d532ec;
+}
+@keyframes animate {
+    0%,5%,10.1%,15.1%,25.1%,45%,70.1%,90%,100%{
+        color:#222;
+        text-shadow: 0 0 0 #222;
+    }
+    5.1%,10%,15.2%,25%, 45.1%,70%,90.1%,95%{
+        color:#fff;
+        text-shadow: 0 0 10px #ff3177, 0 0 20px #ff3177, 0 0 40px #ff3177, 0 0 80px #ff3177, 0 0 160px #ff3177;
+
+    }
+}
